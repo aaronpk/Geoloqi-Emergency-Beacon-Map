@@ -84,6 +84,7 @@ $group = $message->group();
 		}
 	</style>
 	<script type="text/javascript">
+		var refreshInterval = 30; // in seconds
 		var map;
 		var last_ts = 0;
 		var infowindow;
@@ -101,7 +102,7 @@ $group = $message->group();
 			$(window).resize(resizeWindow);
 
 			loadMessages();
-			setInterval(loadMessages, 2000);
+			setInterval(loadMessages, refreshInterval * 1000);
 		});
 
 		function resizeWindow(){
@@ -119,6 +120,8 @@ $group = $message->group();
 					last_ts = data[i].timestamp;
 
 					if(data[i].lat != 0){
+						var position = new google.maps.LatLng(data[i].lat, data[i].lng);
+						
 						$("#message-"+data[i].id).hover(function(){
 							$(this).addClass("hover");	
 						}, function(){
@@ -127,14 +130,15 @@ $group = $message->group();
 							var id = $(this).attr("id").split("-")[1]
 							google.maps.event.trigger(markers[id], "click", {id: id});
 						});
-					}
+						map.setCenter(position);
 					
-					markers[data[i].id] = new google.maps.Marker({
-						map: map,
-						position: new google.maps.LatLng(data[i].lat, data[i].lng),
-						title: data[i].id
-					});
-					attachInfoWindow(markers[data[i].id]);
+						markers[data[i].id] = new google.maps.Marker({
+							map: map,
+							position: position,
+							title: data[i].id
+						});
+						attachInfoWindow(markers[data[i].id]);
+					}
 				}
 			});
 		}
@@ -168,7 +172,7 @@ $group = $message->group();
 	</div>
 	<div id="htext-2" style="position: absolute; top: 13px; left: 560px;">
 		Visitors can send a message from their location<br />
-		by visiting <a href="http://loqi.me">http://loqi.me</a> in a mobile browser.
+		by visiting <strong><a href="http://loqi.me">http://loqi.me</a></strong> in a mobile browser.
 	</div>
 </div>
 <div id="random-pin"></div>

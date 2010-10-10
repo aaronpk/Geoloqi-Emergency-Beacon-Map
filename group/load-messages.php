@@ -9,7 +9,7 @@ $query = db()->prepare('
 	FROM `messages` 
 	WHERE `group_id` = :group_id 
 		AND `is_join` = 0
-		AND `date` > :date 
+		AND `date` > :date
 	ORDER BY `date` ASC');
 $query->bindValue(':group_id', $group['id']);
 $query->bindValue(':date', get('since') ? date('Y-m-d H:i:s', get('since')) : '0000-00-00 00:00:00');
@@ -27,6 +27,7 @@ while($row = $query->fetch(PDO::FETCH_ASSOC))
 		echo '<div class="message-from"><span>[' . strtolower($row['network']) . ']</span> ' . $row['from'] . '</div>';
 		echo '<div class="message-text">' . $row['msg'] . '</div>';
 		echo '<div class="message-date">' . timeAgoInWords($row['date']) . '</div>';
+		echo '<div style="clear: both;"></div>';
 	echo '</div>';
 	$return['html'] = ob_get_clean();
 	$return['timestamp'] = strtotime($row['date']);
