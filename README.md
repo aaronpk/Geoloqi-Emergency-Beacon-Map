@@ -22,27 +22,28 @@ conference organizers.
 LICENSE
 =======
 
+See LICENSE.
+
 Copyright (c) 2010, Geoloqi.com
 All rights reserved.
 
-Redistribution and use in source and binary forms, with or without modification, are 
-permitted provided that the following conditions are met:
+Source code is available under the GPL v2.0 license
+http://creativecommons.org/licenses/GPL/2.0/
 
-  * Redistributions of source code must retain the above copyright notice, this 
-    list of conditions and the following disclaimer.
-  * Redistributions in binary form must reproduce the above copyright notice, this 
-    list of conditions and the following disclaimer in the documentation and/or 
-    other materials provided with the distribution.
-  * Neither the name of Geoloqi.com nor the names of its contributors may be 
-    used to endorse or promote products derived from this software without 
-    specific prior written permission.
+You may contact us to discuss alternative licensing arrangements. info@geoloqi.com
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
-EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
-OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
-SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
-TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
-BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
-STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT 
-OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+You must conspicuously and appropriately publish on each copy distributed an appropriate 
+copyright notice and disclaimer of warranty and keep intact all the notices that refer 
+to this License and to the absence of any warranty; and give any other recipients of the 
+Program a copy of the GNU General Public License along with the Program. Any translation 
+of the GNU General Public License must be accompanied by the GNU General Public License.
+
+If you modify your copy or copies of the program or any portion of it, or develop a program 
+based upon it, you may distribute the resulting work provided you do so under the GNU General 
+Public License. Any translation of the GNU General Public License must be accompanied by the 
+GNU General Public License.
+
+If you copy or distribute the program, you must accompany it with the complete corresponding 
+machine-readable source code or with a written offer, valid for at least three years, to 
+furnish the complete corresponding machine-readable source code.
+
