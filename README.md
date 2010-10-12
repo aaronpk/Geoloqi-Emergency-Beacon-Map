@@ -1,23 +1,19 @@
 ABOUT
 =====
 
-Loqi.me allows mobile phone users to send an emergency GPS beacon to Loqi.me's 
-real-time map. The location and message are sent by SMS or other networks to 
-all crises group members.
+Loqi.me allows mobile users to send an emergency GPS beacon to a real-time map. Crises responders 
+can view all of the help requests on the webpage, along with hospitals and fire stations, 
+real-time 911 calls related to natural disasters.
 
-Any SMS sent to the Tropo phone number with the word join is added to the crises 
-response group. Any emergency GPS beacons or texts for help will be sent to all 
-group members. Crises responders can also view all of the help requests on 
-http://loqi.me webpage, which contains a live-updating map and stream of crises requests.
+Ground teams can easily use Loqi.me on their mobile phones to send notices of supplies and 
+terrain reports in real time. Remote helpers can easily see the whole picture on the website's 
+real-time map, handle help and information requests, and send messages to the network.
 
-Messages can be sent and received from any platform supported by Tropo, including SMS, 
-AIM, Jabber and Twitter.
+Loqi.me supports subscription to group messages via SMS, AIM, Jabber and Twitter. No application 
+installation is required. Location beacons can be sent simply by going to http://loqi.me on a mobile phone.
 
-This package supports multiple "groups" where each group can have its own registered
-phone number and screennames. Each group is treated completely independently of the others,
-so it can be used for several different cities or regions, or even for coordinating 
-conference organizers.
- 
+This application is a resource for citizens, medical teams and governments before, during and after disasters.
+
 
 LICENSE
 =======
