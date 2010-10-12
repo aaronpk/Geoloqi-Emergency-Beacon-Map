@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Loqi.me - Fast, crisis-ready cross-platform group messaging and mapping</title>
+	<title>Loqi.me - Cross-Platform Group Messaging and Location Beacons for Disaster Relief</title>
 	<style type="text/css">
 		body {
 			margin: 0;
@@ -16,6 +16,7 @@
 		}
 		h3 {
 			font-size: 16pt;
+			margin-left: 25px;
 		}
 		#logo {
 			width: 247px;
@@ -26,7 +27,7 @@
 			-moz-border-radius: 10px;
 			border-radius: 10px;
 			background: url(images/splash-gradient-bkg.png) repeat-x #ffecdb;
-			width: 825px;
+			width: 925px;
 			margin: 0 auto;
 			padding-top: 10px;
 		}
@@ -92,7 +93,7 @@
 </div>
 
 <div id="content"><div id="content-inner">
-	<div id="right-bar"><div style="margin: 10px;">
+	<div id="right-bar"><div style="margin: 20px 10px 10px 10px;">
 		<div class="feature">
 			<div class="pin"></div>
 			<strong>Geolocated Emergency Beacons</strong><br />
@@ -121,27 +122,32 @@
 			<span class="network">SMS:</span> (202)618-0872<br />
 			<span class="network">AIM:</span> loqime<br />
 			<span class="network">Jabber:</span> loqime@tropo.im<br />
-			<span class="network">Twitter:</span> @loqime 
+			<span class="network">Twitter:</span> <a href="http://twitter.com/loqime" style="color: white; text-decoration: none;">@loqime</a> 
 		</div>
 	</div></div>
 	
-	<h3 style="width: 500px;">Fast, Crisis-Ready Cross-platform Group Messaging and Mapping</h3>
+	<h3 style="width: 500px;">Cross-Platform Group Messaging and Location Beacons for Disaster Relief</h3>
 	
-	<p><strong>Geolocation and communication for those in need</strong>
-		Loqi.me allows mobile phone users to send an emergency GPS beacon to Loqi.me’s real-time map. The location and message are sent by SMS or other networks to all crises group members.</p>
-	<p><strong>Group Messaging</strong>
-		Any SMS sent to <strong>(202) 618-0872</strong> with the word <strong>join</strong> is added to the crises response group. Any emergency GPS beacons or texts for help will be sent to all group members. Crises responders can also view all of the help requests on <strong>http://loqi.me</strong> webpage, which contains a live-updating map and stream of crises requests.</p>
+	<p><strong>Loqi.me allows mobile users to send an emergency GPS beacon to a real-time map.</strong> Crises responders can view all of the help requests on the
+		webpage, along with hospitals and fire stations, real-time 911 calls related to natural disasters.</p>
 
-	<p><strong>Multiple Message Sources</strong>
-		Messages can be sent from any platform supported by Tropo, including SMS, AIM, Jabber and Twitter.</p>
+	<p><strong>Ground teams can easily use Loqi.me on their mobile phones</strong> to send notices of supplies and terrain reports in real time. Remote helpers
+		can easily see the whole picture on the website's real-time map, handle help and information requests, and send messages to the network.</p>
+
+	<p><strong>Loqi.me supports subscription to group messages via SMS, AIM, Jabber and Twitter.</strong> No application installation is required. Location
+		beacons can be sent simply by going to http://loqi.me on a mobile phone.</p>
+	
+	<p>This application is a resource for citizens, medical teams and governments before, during and after disasters.</p>
 	
 	<div>
-		<div style="text-align: center; width: 200px; font-size: 10pt; float: left;">
-			Made possible by<br />
-			<a href="http://gwob.org"><img src="images/gwoborg-logo.png" /></a> <a href="http://tropo.com"><img src="images/tropo-logo.png" /></a>
+		<div style="width: 400px; font-size: 10pt; float: left; margin-left: 20px; margin-top: 10px;">
+			Made possible by:<br />
+			<a href="http://gwob.org" class="logo"><img src="images/gwoborg-logo.png" width="93" height="56" /></a>
+			<a href="http://tropo.com" class="logo"><img src="images/tropo-logo.png" width="74" height="56" /></a>
+			<a href="http://civicapps.org" class="logo"><img src="images/civicapps-logo.png" width="175" height="56" /></a>
 		</div>	
 		<div style="padding-top: 20px; text-align: right;">
-			<a href="gwob"><img src="images/try-it-out.png" /></a>
+			<a href="civicapps"><img src="images/try-it-out.png" /></a>
 		</div>
 		<div style="clear: both;"></div>
 	</div>

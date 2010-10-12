@@ -21,11 +21,11 @@ $json = array();
 while($row = $query->fetch(PDO::FETCH_ASSOC))
 {
 	ob_start();
-	echo '<div class="message ' . ($i % 2 == 0 ? 'even' : 'odd') . ($row['lat'] ? ' with-location' : '') . '" id="message-' . $row['id'] . '">';
+	echo '<div class="message ' . ($row['lat'] ? ' with-location' : '') . '" id="message-' . $row['id'] . '">';
 		if($row['lat'])
 			echo '<div class="message-location"></div>';
 		echo '<div class="message-from"><span>[' . strtolower($row['network']) . ']</span> ' . $row['from'] . '</div>';
-		echo '<div class="message-text">' . $row['msg'] . '</div>';
+		echo '<div class="message-text">' . ($row['msg'] ? $row['msg'] : '(no text)<br />' . round($row['lat'], 4) . ', ' . round($row['lng'], 4)) . '</div>';
 		echo '<div class="message-date">' . timeAgoInWords($row['date']) . '</div>';
 		echo '<div style="clear: both;"></div>';
 	echo '</div>';
