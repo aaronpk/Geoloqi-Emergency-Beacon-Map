@@ -91,10 +91,18 @@ $group = $message->group();
 		}
 		.message.with-911 .message-text {
 			font-size: 10pt;
-		} 
+		}
+		.legend {
+			padding: 10px; 
+			font-size: 10pt;
+			background-color: #fff2e7;
+		}
+		.legend img {
+			margin: 0 5px;
+		}
 	</style>
 	<script type="text/javascript">
-		var refreshInterval = 30; // in seconds
+		var refreshInterval = 10; // in seconds
 		var map;
 		var last_ts = 0;
 		var last_ts_911 = <?=strtotime('-4 hours')?>;
@@ -143,7 +151,7 @@ $group = $message->group();
 
 		function resizeWindow(){
 			var height = (window.innerHeight - $("#header").height() - $("#header-row").height() - $("#footer-row").height());
-			$("#message-log").css("height", height + "px");
+			$("#message-log").css("height", (height - 90) + "px");
 			$("#map").css("height", height + "px");
 		}
 
@@ -280,7 +288,7 @@ $group = $message->group();
 		<td>Messages</td>
 	</tr>
 	<tr>
-		<td style="vertical-align: top;">
+		<td style="vertical-align: top;" rowspan="2">
 			<div id="map"></div>
 		</td>
 		<td width="300" style="vertical-align: top;">
@@ -288,12 +296,32 @@ $group = $message->group();
 			</div>
 		</td>
 	</tr>
+	<tr>
+		<td height="90"><div class="legend">
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td><img src="images/911-call-icon-24px.png" width="24" height="24" /></td>
+					<td>Loqi.me Beacon</td>
+					<td><img src="images/pin.png" width="24" height="36" /></td>
+					<td>911 Call</td>
+				</tr>
+				<tr>
+					<td><img src="images/fire-station-icon-24px.png" width="24" height="24" /></td>
+					<td>Fire Station</td>
+					<td><img src="images/hospital-icon-24px.png" width="24" height="24" /></td>
+					<td>Hospital</td>
+				</tr>
+			</table>
+		</div></td>
+	</tr>
 	<tr id="footer-row">
 		<td colspan="2" style="background-color: #ff9a41; height: 23px; color: white; padding-left: 20px;">
 			By <a href="http://aaronparecki.com">Aaron Parecki</a> and <a href="http://oakhazelnut.com">Amber Case</a> of <a href="http://geoloqi.com">Geoloqi.com</a>
 		</td>
 	</tr>
 </table>
+
+<?php googleAnalytics(); ?>
 
 </body>
 </html>
