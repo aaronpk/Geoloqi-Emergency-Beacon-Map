@@ -14,6 +14,9 @@ installation is required. Location beacons can be sent simply by going to http:/
 
 This application is a resource for citizens, medical teams and governments before, during and after disasters.
 
+![front-page](loqime-front-page.jpg)
+
+![map](loqime-map.png)
 
 LICENSE
 =======
